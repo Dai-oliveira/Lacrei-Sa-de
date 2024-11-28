@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lacrei Saúde - Contato</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+
+
+  </head>
+
+  <body>
+    <header>
+      <img
+        src="imagem/b9005025-89b3-4c4b-b20a-da6348ecf713.png"
+        alt="Lacrei Saúde Logo"
+        class="logo"
+      />
+      <h1>Lacrei Saúde</h1>
+
+      <nav>
+        <a href="index.html">Início</a>
+        <a href="page2.html">Nosso Propósito</a>
+        <a href="contato.html">Contato</a>
+      </nav>
+    </header>
+
+    <main>
+      <section id="contato" class="contato">
+        <h2>Contato</h2>
+        <form id="contact-form">
+          <label for="name">Nome:</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="email">E-mail:</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="subject">Assunto:</label>
+          <input type="text" id="subject" name="subject" required />
+
+          <label for="message">Mensagem:</label>
+          <textarea id="message" name="message" required></textarea>
+
+          <button type="submit">Enviar</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2024 Lacrei Saúde. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

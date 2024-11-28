@@ -1,0 +1,221 @@
+/* styles.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+/*
+* Dentro da propriedade :root definimos as "variaveis css",
+* onde definimos os padrões de cores, espaçamentos, etc...
+*/
+:root {
+  --text-heading: #131313;
+  --text-body: #2D2D2D;
+  --text-hover: #007756;
+
+  --gradient-lacrei: linear-gradient(105.43deg, rgb(1, 131, 131) 14.39%, rgb(1, 70, 135) 84.69%);
+
+  --background-highlight: #F9F3FF;
+  --background-default: #fff;
+  
+  --background-accent-base: #018762;
+  --background-accent-dark: #007756;
+  
+  /*
+  lg - large - grande
+  md - medium - medio
+  sm - small - pequeno
+  */
+  --border-radius-xs: 4px;
+  --border-radius-sm: 8px;
+  --border-radius-md: 16px;
+  --border-radius-lg: 24px;
+}
+
+* {
+  font-family: "Nunito", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--text-heading);
+}
+
+p,
+label {
+  color: var(--text-body);
+}
+
+body {
+  background-color: var(--background-default);
+}
+
+header {
+  padding: 1em 0;
+  text-align: center;
+
+  position: relative;
+}
+
+header .logo {
+  width: 50px;
+  height: 50px;
+
+  position: absolute;
+  left: 10px;
+  top: 20px;
+}
+
+header button {
+  position: absolute;
+  right: 10px;
+  top: 20px;
+}
+
+header nav a {
+  margin: 0 15px;
+
+  &:hover {
+    color: var(--text-hover);
+  }
+}
+
+header h1 {
+  font-size: 40px;
+}
+
+main {
+  padding: 2em;
+  text-align: center;
+  color: #018383;
+}
+
+.bem-vindo {
+  font-size: 30px;
+}
+
+main .imagem-principal {
+  width: 100%;
+  height: auto;
+  max-width: 600px;
+  margin: 20px 0;
+  border-radius: var(--border-radius-lg);
+}
+
+button {
+  padding: 10px 20px;
+  
+  height: 48px;
+  border: none;
+  border-radius: var(--border-radius-md);
+
+  cursor: pointer;
+
+  transition: background-color 0.3s ease;
+
+  &.primary {
+    background-color: var(--background-accent-base);
+    color: white;
+    
+    &:hover {
+      background-color: var(--background-accent-dark);
+    }
+  }
+
+  &.secondary {
+    background-color: blue;
+    color: black;
+    
+    &:hover {
+      background-color: grey;
+    }
+  }
+}
+
+section.blocos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.blocos .bloco {
+  background-color: var(--background-highlight);
+  border-radius: var(--border-radius-sm);
+  padding: 20px;
+  width: 300px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.blocos .bloco img.icone {
+  width: 50px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.bloco h3 {
+  font-size: 2rem;
+  background: var(--gradient-lacrei) text;
+  -webkit-text-fill-color: transparent;
+}
+
+.contato {
+  margin-top: 40px;
+  text-align: left;
+}
+
+.contato form {
+  max-width: 500px;
+  margin: 0 auto;
+  background-color: white;
+  padding: 20px;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 4px #018383;
+  border-radius: 8px;
+}
+
+.contato label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.contato input,
+.contato textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.contato button {
+  background-color: #018762;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contato button:hover {
+  background-color: #018383;
+}
+
+footer {
+  background-color: var(--background-accent-base);
+  text-align: center;
+  padding: 1em 0;
+  bottom: 0;
