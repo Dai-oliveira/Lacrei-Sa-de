@@ -218,4 +218,11 @@ footer {
   background-color: var(--background-accent-base);
   text-align: center;
   padding: 1em 0;
-  bottom: 0;
+  position: absolute;
+  width: 100%;
+}
+
+.contato h2 {
+  text-align: center;
+  margin-bottom: 10px;
+}
