@@ -1,6 +1,6 @@
 /* styles.css */
 
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
 
 /*
 * Dentro da propriedade :root definimos as "variaveis css",
@@ -8,17 +8,21 @@
 */
 :root {
   --text-heading: #131313;
-  --text-body: #2D2D2D;
+  --text-body: #2d2d2d;
   --text-hover: #007756;
 
-  --gradient-lacrei: linear-gradient(105.43deg, rgb(1, 131, 131) 14.39%, rgb(1, 70, 135) 84.69%);
+  --gradient-lacrei: linear-gradient(
+    105.43deg,
+    rgb(1, 131, 131) 14.39%,
+    rgb(1, 70, 135) 84.69%
+  );
 
-  --background-highlight: #F9F3FF;
+  --background-highlight: #f9f3ff;
   --background-default: #fff;
-  
+
   --background-accent-base: #018762;
   --background-accent-dark: #007756;
-  
+
   /*
   lg - large - grande
   md - medium - medio
@@ -114,7 +118,7 @@ main .imagem-principal {
 
 button {
   padding: 10px 20px;
-  
+
   height: 48px;
   border: none;
   border-radius: var(--border-radius-md);
@@ -126,7 +130,7 @@ button {
   &.primary {
     background-color: var(--background-accent-base);
     color: white;
-    
+
     &:hover {
       background-color: var(--background-accent-dark);
     }
@@ -135,7 +139,7 @@ button {
   &.secondary {
     background-color: blue;
     color: black;
-    
+
     &:hover {
       background-color: grey;
     }
@@ -219,7 +223,7 @@ footer {
   text-align: center;
   padding: 1em 0;
   position: absolute;
-  margin-bottom: 0px;
+  bottom: 0%;
   width: 100%;
 }
 
